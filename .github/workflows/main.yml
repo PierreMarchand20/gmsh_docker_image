@@ -25,7 +25,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          target: gmsh_docker_image
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/gmsh_docker_image
           cache-from: ${{ secrets.DOCKERHUB_USERNAME }}/gmsh_docker_image
           build-args: BUILDKIT_INLINE_CACHE=1

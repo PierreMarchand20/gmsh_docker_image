@@ -11,7 +11,6 @@ RUN  ln -fs /usr/share/zoneinfo/Europe/Paris /etc/localtime \
     gfortran \
     tcl-dev \
     tk-dev \
-    wget \
     libgl1-mesa-dev \
     libxi-dev \
     libxmu-dev \
@@ -34,7 +33,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libglu1-mesa-dev \
     freeglut3-dev \
     mesa-common-dev \
-    wget \
     mesa-utils \ 
     libfltk1.3-dev \
     && rm -rf /var/lib/apt/lists/* \

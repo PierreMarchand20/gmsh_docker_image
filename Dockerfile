@@ -15,7 +15,7 @@ RUN  ln -fs /usr/share/zoneinfo/Europe/Paris /etc/localtime \
     libxi-dev \
     libxmu-dev \
     && rm -rf /var/lib/apt/lists/* \
-    && git clone https://github.com/Open-Cascade-SAS/OCCT.git opencascade \
+    && git clone --depth 1 --branch V7_5_0 https://github.com/Open-Cascade-SAS/OCCT.git opencascade \
     && mkdir opencascade/build \
     && cd opencascade/build \
     && cmake .. \
